@@ -16,3 +16,5 @@ Open ocr_recognition.py, find this line near the top
    python make_sample.py
    python ocr_recognition.py
 That's it, it'll print the recognized text and confidence score.
+
+Note: Two png sample images provided for testing purposes.
