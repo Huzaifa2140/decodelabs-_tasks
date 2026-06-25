@@ -6,3 +6,8 @@ I'm teaching a bot to talk using fixed rules, no AI learning involved. User type
 Project 2 — Iris Classifier (KNN)
 
 I'm teaching a model to guess a flower's species from its measurements. Load 150 flower samples → scale the numbers so they're on the same range → split into 80% train / 20% test → train a KNN model (it predicts a new flower's species by checking its 5 closest neighbors in the training data and taking a majority vote) → test it on the unseen 20% → print accuracy + confusion matrix to prove it actually works. Point of the project: show I can do the basic supervised learning pipeline — load, split, train, predict, evaluate.
+<br>
+
+Project 3 — Tech Stack Recommender
+
+I'm matching a user's skills to the best-fit job role. I take 3 skills as input → convert all job roles' required skills and the user's skills into number vectors using TF-IDF (so rare/specific skills count more than generic ones) → calculate cosine similarity between the user's vector and every job role's vector → sort by score and show the top 3 best matches. Point of the project: build a basic content-based recommendation engine using similarity math, the same core idea behind Netflix/Amazon recommendations.
