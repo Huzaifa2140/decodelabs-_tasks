@@ -1,0 +1,18 @@
+Steps to run this:
+
+Install Python if not already (python.org → check "Add to PATH" during install)
+Open this folder in VS Code (File → Open Folder)
+Open terminal in VS Code (Ctrl + `) and run:
+
+   pip install pytesseract opencv-python-headless pillow
+
+Download and install Tesseract OCR from: https://github.com/UB-Mannheim/tesseract/wiki
+Open ocr_recognition.py, find this line near the top
+
+   pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+(make sure the path matches wherever Tesseract actually got installed on your PC)
+
+6. In terminal, run:
+   python make_sample.py
+   python ocr_recognition.py
+That's it, it'll print the recognized text and confidence score.
