@@ -1,7 +1,8 @@
 import cv2
 import pytesseract
 
-pytesseract.pytesseract.tesseract_cmd = r"C:/Users/HP/AppData/Local/Programs/Tesseract-OCR/tesseract.exe"
+#Uncomment and change the path accordingly 
+#pytesseract.pytesseract.tesseract_cmd = r"C:/Users/HP/AppData/Local/Programs/Tesseract-OCR/tesseract.exe"
 image_path = "Sample image.png"
 img = cv2.imread(image_path)
 
