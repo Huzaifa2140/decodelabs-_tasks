@@ -11,3 +11,8 @@ I'm teaching a model to guess a flower's species from its measurements. Load 150
 Project 3 — Tech Stack Recommender
 
 I'm matching a user's skills to the best-fit job role. I take 3 skills as input → convert all job roles' required skills and the user's skills into number vectors using TF-IDF (so rare/specific skills count more than generic ones) → calculate cosine similarity between the user's vector and every job role's vector → sort by score and show the top 3 best matches. Point of the project: build a basic content-based recommendation engine using similarity math, the same core idea behind Netflix/Amazon recommendations.
+<br>
+
+Project 4 — OCR Text Recognition
+
+I'm building a script that reads text out of an image. The image first goes through pre-processing — grayscale conversion, blur to remove noise, and thresholding to turn it into clean black-and-white — since OCR works way better on clean images than raw ones. Then I run it through Tesseract's OCR engine, which extracts the text along with a confidence score for each word. I only treat the result as reliable if the average confidence is 80% or higher. Point of the project: integrate a pre-trained AI library (Tesseract) into a working pipeline instead of training a model from scratch.
